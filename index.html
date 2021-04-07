@@ -7,10 +7,154 @@
     <title>Home</title>
     <link rel="stylesheet" href="public/css/tailwind.css" />
   </head>
-  <body class="font-body">
-    <div class="w-full h-screen flex justify-center items-center">
-      <h1 class="font-semibold">Fitur yang Kami tawarkan</h1>
-    </div>
+  <body class="font-body bg-secondary-300">
+    <!-- navbar -->
+    <nav class="w-4/5 mx-auto flex justify-between py-10 text-secondary-100">
+      <a href="#" class="font-semibold sm:text-xl text-lg">E-Library</a>
+      <div class="flex relative items-center">
+        <span class="text-xs sm:text-lg">Tamu</span>
+
+        <button class="cursor-pointer sm:ml-5 ml-1" id="nav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#1B1C1E"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-user"
+          >
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+
+        <ul class="w-36 bg-white absolute sm:-right-10 -right-7 top-10 sm:top-12 rounded-sm py-3 shadow-md hidden transition ease-in" id="dropdown">
+          <li>
+            <a href="#" class="flex w-full justify-evenly py-2 text-sm hover:bg-secondary-200">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B1C1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                <polyline points="10 17 15 12 10 7"></polyline>
+                <line x1="15" y1="12" x2="3" y2="12"></line>
+              </svg>
+              Masuk
+            </a>
+          </li>
+          <li>
+            <a href="./pages/auth/login.html" class="flex w-full justify-evenly py-2 text-sm hover:bg-secondary-200">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B1C1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <line x1="20" y1="8" x2="20" y2="14"></line>
+                <line x1="23" y1="11" x2="17" y2="11"></line>
+              </svg>
+              Daftar
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /navbar -->
+
+    <section class="my-10 w-4/5 mx-auto py-10 bg-secondary-200 rounded-md shadow-lg grid place-items-center">
+      <div class="w-2/3 flex items-center justify-center sm:flex-row flex-col">
+        <div class="h-full w-52 bg-gray-500 rounded-md overflow-hidden shadow-lg mr-5 mb-5 sm:mb-0">
+          <img src="./public/img/buku.jpg" alt="buku" />
+        </div>
+
+        <div class="flex flex-col text-secondary-100">
+          <h2 class="font-semibold lg:text-2xl">Statistika dengan Program Komputer</h2>
+          <div class="my-5">
+            <a href="#" class="py-2 px-4 rounded-md text-white bg-warning-200 hover:bg-yellow-500 transition-colors ease-linear">Komputer</a>
+          </div>
+          <span>Ahmad Kholiqul Amin</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-10 w-4/5 mx-auto py-10 text-secondary-100">
+      <h1 class="font-semibold text-2xl">Daftar Buku</h1>
+
+      <div class="w-full flex flex-wrap justify-evenly sm:flex-row flex-col my-5">
+        <div class="card-buku">
+          <img src="./public/img/buku.jpg" alt="buku" class="w-full" />
+
+          <h3 class="font-semibold my-3">Ahmad Kholiqul Amin</h3>
+
+          <div class="w-full flex justify-between lg:flex-row sm:flex-col">
+            <a href="#" class="btn-buku booking sm:my-2 my-0">
+              <svg class="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              Booking</a
+            >
+            <a href="#" class="btn-buku detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              Detail</a
+            >
+          </div>
+        </div>
+
+        <div class="card-buku">
+          <img src="./public/img/buku2.png" alt="buku" class="w-full" />
+
+          <h3 class="font-semibold my-3">Nuris Akbar SST</h3>
+
+          <div class="w-full flex justify-between lg:flex-row sm:flex-col">
+            <a href="#" class="btn-buku booking sm:my-2 my-0">
+              <svg class="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              Booking</a
+            >
+            <a href="#" class="btn-buku detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              Detail</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full flex justify-center my-20">
+        <button class="px-6 py-3 bg-warning-200 hover:bg-yellow-500 rounded text-white shadow-lg">Show More</button>
+      </div>
+    </section>
+
+    <footer class="my-10 w-4/5 mx-auto py-10">
+      <span class="flex text-secondary-100 items-center">
+        Handcrafted with &nbsp;
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="red"
+          stroke="none"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-heart"
+        >
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+      </span>
+    </footer>
+
     <script src="public/js/jquery-3.5.1.min.js"></script>
     <script src="public/js/main.js"></script>
   </body>
