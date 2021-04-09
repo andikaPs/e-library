@@ -34,7 +34,7 @@
 
         <ul class="w-36 bg-white absolute sm:-right-10 -right-7 top-10 sm:top-12 rounded-sm py-3 shadow-md hidden transition ease-in" id="dropdown">
           <li>
-            <a href="#" class="flex w-full justify-evenly py-2 text-sm hover:bg-secondary-200">
+            <a href="./src/pages/auth/login.html" class="flex w-full justify-evenly py-2 text-sm hover:bg-secondary-200">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B1C1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
                 <polyline points="10 17 15 12 10 7"></polyline>
@@ -80,19 +80,59 @@
 
       <div class="w-full flex flex-wrap sm:flex-row flex-col my-5">
         <!-- card -->
-        <div class="w-full bg-white border-2 border-gray-300 rounded py-3 px-8 flex justify-between items-center hover:shadow-lg transition-shadow ease-linear hover:border-opacity-0">
+        <div class="card-buku">
           <!-- box 1 -->
-          <div class="flex items-center">
+          <div class="flex items-center sm:flex-row flex-col">
             <!-- image card -->
-            <div class="bg-gray-300 w-28 h-28 rounded-lg overflow-hidden mr-5">
+            <div class="bg-gray-300 w-28 h-28 rounded-lg overflow-hidden sm:mr-5 mr-0">
               <a href="">
                 <img src="./public/img/buku.jpg" alt="buku" />
               </a>
             </div>
 
             <!-- title card & sub title -->
-            <div class="flex flex-col">
-              <h2 class="text-xl font-medium">Statistika dengan Program Komputer.</h2>
+            <div class="flex flex-col sm:my-0 my-3 text-center sm:text-left">
+              <h2 class="sm:text-xl text-sm font-medium">Statistika dengan Program Komputer.</h2>
+              <p class="font-light text-gray-400">Ahmad Kholiqul Amin.</p>
+            </div>
+          </div>
+          <!-- action card -->
+          <div class="flex flex-col">
+            <a href="#" class="btn-buku booking">
+              <svg class="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+
+              Booking
+            </a>
+            <a href="#" class="btn-buku detail mt-2">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              Detail
+            </a>
+          </div>
+        </div>
+        <!-- /card -->
+
+        <!-- card -->
+        <div class="card-buku">
+          <!-- box 1 -->
+          <div class="flex items-center sm:flex-row flex-col">
+            <!-- image card -->
+            <div class="bg-gray-300 w-28 h-28 rounded-lg overflow-hidden sm:mr-5 mr-0">
+              <a href="">
+                <img src="./public/img/buku2.PNG" alt="buku" />
+              </a>
+            </div>
+
+            <!-- title card & sub title -->
+            <div class="flex flex-col sm:my-0 my-3 text-center sm:text-left">
+              <h2 class="sm:text-xl text-sm font-medium">Statistika dengan Program Komputer.</h2>
               <p class="font-light text-gray-400">Ahmad Kholiqul Amin.</p>
             </div>
           </div>
