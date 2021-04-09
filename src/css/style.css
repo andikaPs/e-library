@@ -9,7 +9,7 @@
 }
 
 .btn-buku {
-  @apply py-2 px-4  transition-colors ease-linear flex text-white items-center justify-center rounded-md;
+  @apply py-2 px-4 transition-colors ease-linear flex text-white items-center justify-center rounded-md;
 }
 
 .booking {
