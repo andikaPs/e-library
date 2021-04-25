@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Buku</title>
+    <link rel="stylesheet" href="../../../public/css/tailwind.css" />
+  </head>
+  <body class="font-body bg-secondary-300">
+    <!-- navbar -->
+    <nav class="w-4/5 mx-auto flex justify-between py-10 text-secondary-100">
+      <a href="#" class="font-semibold sm:text-xl text-lg">E-Library</a>
+      <div class="flex relative items-center">
+        <span class="text-xs sm:text-lg">Tamu</span>
+
+        <button class="cursor-pointer sm:ml-5 ml-1" id="nav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#1B1C1E"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-user"
+          >
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+
+        <ul class="w-36 bg-white absolute sm:-right-10 -right-7 top-10 sm:top-12 rounded-sm py-3 shadow-md hidden transition ease-in" id="dropdown">
+          <li>
+            <a href="./src/pages/auth/login.html" class="flex w-full justify-evenly py-2 text-sm hover:bg-secondary-200">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B1C1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                <polyline points="10 17 15 12 10 7"></polyline>
+                <line x1="15" y1="12" x2="3" y2="12"></line>
+              </svg>
+              Masuk
+            </a>
+          </li>
+          <li>
+            <a href="./src/pages/auth/daftar.html" class="flex w-full justify-evenly py-2 text-sm hover:bg-secondary-200">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B1C1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <line x1="20" y1="8" x2="20" y2="14"></line>
+                <line x1="23" y1="11" x2="17" y2="11"></line>
+              </svg>
+              Daftar
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /navbar -->
+
+    <section class="sec">
+      <div class="flex items-center">
+        <a href="../../../index.html" class="w-10 h-10 rounded-full bg-white shadow-2xl flex justify-center items-center hover:shadow transition-shadow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8.164" height="17.328" viewBox="0 0 10.164 18.328">
+            <path
+              id="Path_11"
+              data-name="Path 11"
+              d="M12.75,20.5,5,12.75,12.75,5"
+              transform="translate(-4 -3.586)"
+              fill="none"
+              stroke="#1B1C1E"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
+        <h1 class="text-2xl font-bold ml-5 text-secondary-100">Detail Buku</h1>
+      </div>
+      <div class="grid grid-cols-3 gap-10 my-10">
+        <div class="col-span-1 bg-gray-400 overflow-hidden rounded">
+          <img src="../../../public/img/buku.jpg" alt="buku 1" class="w-full" />
+        </div>
+        <div class="col-span-2 bg-secondary-300 shadow-md rounded p-20">
+          <div class="grid grid-cols-3 gap-3">
+            <div class="flex flex-col col-span-2">
+              <h1 class="font-semibold text-xl mb-2">Judul Buku</h1>
+              <span>Statistika dengan Program Komputer</span>
+            </div>
+            <div class="flex flex-col col-span-1">
+              <h1 class="font-semibold text-xl mb-2">Penerbit</h1>
+              <span>Deep Publish</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../../../public/js/jquery-3.5.1.min.js"></script>
+    <script src="../../../public/js/main.js"></script>
+  </body>
+</html>

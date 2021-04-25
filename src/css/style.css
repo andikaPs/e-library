@@ -19,3 +19,7 @@
 .detail {
   @apply bg-warning-200 hover:bg-yellow-500;
 }
+
+.sec {
+  @apply my-10 w-4/5 mx-auto py-10;
+}
