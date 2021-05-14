@@ -76,7 +76,17 @@
     </section>
 
     <section class="sec text-secondary-100">
-      <h1 class="font-semibold text-2xl">Daftar Buku</h1>
+      <form action="#" method="POST" autocomplete="off">
+        <input
+          type="text"
+          name="nama"
+          id="nama"
+          class="w-full bg-secondary-400 border-2 focus:border-gray-400 focus:bg-secondary-300 outline-none rounded-md px-4 py-2 text-secondary-100"
+          placeholder="Cari Buku / Penulis / Penerbit / Kategori ..."
+        />
+      </form>
+
+      <h1 class="font-semibold text-2xl mt-5">Daftar Buku</h1>
 
       <div class="w-full flex flex-wrap sm:flex-row flex-col my-5">
         <!-- card -->
@@ -98,7 +108,7 @@
           </div>
           <!-- action card -->
           <div class="flex flex-col">
-            <a href="#" class="btn-buku booking">
+            <a href="./src/pages/pinjam/booking.html" class="btn-buku booking">
               <svg class="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                 <line x1="3" y1="6" x2="21" y2="6"></line>

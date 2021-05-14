@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Buku</title>
+    <link rel="stylesheet" href="../../../public/css/tailwind.css" />
+  </head>
+  <body class="font-body bg-secondary-300">
+    <!-- navbar -->
+    <nav class="w-4/5 mx-auto flex justify-between py-10 text-secondary-100">
+      <a href="#" class="font-semibold sm:text-xl text-lg">E-Library</a>
+      <div class="flex relative items-center">
+        <span class="text-xs sm:text-lg">Tamu</span>
+
+        <button class="cursor-pointer sm:ml-5 ml-1" id="nav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#1B1C1E"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-user"
+          >
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+
+        <ul class="w-36 bg-white absolute sm:-right-10 -right-7 top-10 sm:top-12 rounded-sm py-3 shadow-md hidden transition ease-in" id="dropdown">
+          <li>
+            <a href="./src/pages/auth/login.html" class="flex w-full justify-evenly py-2 text-sm hover:bg-secondary-200">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B1C1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                <polyline points="10 17 15 12 10 7"></polyline>
+                <line x1="15" y1="12" x2="3" y2="12"></line>
+              </svg>
+              Masuk
+            </a>
+          </li>
+          <li>
+            <a href="./src/pages/auth/daftar.html" class="flex w-full justify-evenly py-2 text-sm hover:bg-secondary-200">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B1C1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <line x1="20" y1="8" x2="20" y2="14"></line>
+                <line x1="23" y1="11" x2="17" y2="11"></line>
+              </svg>
+              Daftar
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /navbar -->
+
+    <section class="sm:my-10 w-4/5 mx-auto py-10">
+      <div class="flex items-center">
+        <a href="../../../index.html" class="w-10 h-10 rounded-full bg-white shadow-2xl flex justify-center items-center hover:shadow transition-shadow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8.164" height="17.328" viewBox="0 0 10.164 18.328">
+            <path
+              id="Path_11"
+              data-name="Path 11"
+              d="M12.75,20.5,5,12.75,12.75,5"
+              transform="translate(-4 -3.586)"
+              fill="none"
+              stroke="#1B1C1E"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
+        <h1 class="text-2xl font-bold ml-5 text-secondary-100">Daftar Buku yang Anda Booking</h1>
+      </div>
+
+      <div class="w-full overflow-x-auto">
+        <table class="table-auto w-full my-5">
+          <thead>
+            <tr class="text-left">
+              <th class="p-2">#</th>
+              <th class="p-2">Buku</th>
+              <th class="p-2">Penulis</th>
+              <th class="p-2">Penerbit</th>
+              <th class="p-2">Tahun Terbit</th>
+              <th class="p-2">Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-2">1</td>
+              <td class="w-28 p-2">
+                <img src="../../../public/img/buku2.jpg" alt="" class="shadow-lg" />
+              </td>
+              <td class="p-2">Abdul Kadir</td>
+              <td class="p-2">Elex Media Komputindo</td>
+              <td class="p-2">2020</td>
+              <td class="p-2">
+                <a href="#" class="px-4 py-2 grid place-content-center rounded bg-red-600 hover:bg-red-700 transition-colors">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="3 6 5 6 21 6"></polyline>
+                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                  </svg>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-10 flex sm:flex-row flex-col">
+        <a href="../../../index.html" class="px-6 py-2 booking flex justify-center items-center rounded text-white sm:mr-5 sm:mb-0 mb-3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+          </svg>
+          Lanjutkan Booking
+        </a>
+
+        <a href="selesai-booking.html" class="px-6 py-2 detail flex justify-center items-center rounded text-white">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <rect x="9" y="9" width="6" height="6"></rect>
+          </svg>
+          Selesaikan Booking
+        </a>
+      </div>
+    </section>
+    <script src="../../../public/js/jquery-3.5.1.min.js"></script>
+    <script src="../../../public/js/main.js"></script>
+  </body>
+</html>
