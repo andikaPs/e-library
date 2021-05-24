@@ -23,3 +23,19 @@
 .sec {
   @apply my-10 w-4/5 mx-auto py-10;
 }
+
+.alert {
+  @apply w-full py-3 px-6 rounded text-white flex items-center;
+}
+
+.alert-primary {
+  background-color: #0274d8ed;
+}
+
+.alert-warning {
+  background-color: #f0ad4e;
+}
+
+.alert-danger {
+  background-color: #d9534f;
+}
